@@ -1,0 +1,21 @@
+
+public class Gameboy1 {
+
+	public static void main(String[] args) {
+		char[][] gameboard = {{' ','|',' ','|',' '},
+				{'-','+','-','+','-'},
+				{' ','|',' ','|',' '},
+				{'-','+','-','+','-'},
+				{' ','|',' ','|',' '}};
+		    printgameboard(gameboard);
+		}
+		public static void printgameboard(char[][] gameboard){
+		    for(char[] row : gameboard) {
+			for(char c : row) {
+				System.out.print(c);
+			}
+			System.out.println();
+		}
+	}
+
+}
